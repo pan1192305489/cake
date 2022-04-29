@@ -1,0 +1,119 @@
+{
+	// uview
+	"easycom": {
+		"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/home/home",
+			"style": {
+				// 当前导航的标题栏文字
+				"navigationBarTitleText": "首页",
+				// 导航栏的背景颜色
+				"navigationBarBackgrountColor": "#ff5566",
+				// 导航栏文字的颜色
+				"navigationBarTextStyle": "white",
+				// 使用默认导航栏，设置为custom的话就需要自己封装导航栏
+				"navigationStyle": "custom",
+				// 启用下拉刷新的loading动画
+				"enablePullDownRefresh": true
+			}
+		}, {
+			"path": "pages/cake/cake",
+			"style": {
+				"navigationBarTitleText": "",
+				//  自定义导航栏
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": true
+			}
+
+		}, {
+			"path": "pages/bread/bread",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/food/food",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/my/my",
+			"style": {
+				"navigationBarTitleText": "个人中心",
+				"enablePullDownRefresh": false
+			}
+
+		},
+		{
+			"path": "pages/detail/detail",
+			"style": {
+				"navigationBarTitleText": "商品详情",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/home/home",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/home/banner-ad",
+			"style": {
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": false
+			}
+
+		}
+		, {
+			"path": "pages/collect-data/collect-data",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}
+	],
+	// 全局样式配置
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F1F1F1",
+		"backgroundColor": "#F8F8F8"
+	}
+	// 底部导航栏
+	// "tabBar": {
+	// 	"color": "#d8d8d8",
+	// 	// 选中后颜色
+	// 	"selectedColor": "#444",
+	// 	// 每个选项的配置
+	// 	"list": [{
+	// 			"text": "首页",
+	// 			// 点击后跳转的页面
+	// 			"pagePath": "pages/cake/cake",
+	// 			// 未激活时显示的图标
+	// 			"iconPath": "static/tab/首页.png",
+	// 			"selectedIconPath": "static/tab/204首页.png"
+	// 		},
+	// 		{
+	// 			"text": "小食",
+	// 			"pagePath": "pages/food/food",
+	// 			"iconPath": "static/tab/购物车.png",
+	// 			"selectedIconPath": "static/tab/购物车满.png"
+	// 		},
+	// 		{
+	// 			"text": "我的",
+	// 			"pagePath": "pages/my/my",
+	// 			"iconPath": "static/tab/_我的.png",
+	// 			"selectedIconPath": "static/tab/我的-我的.png"
+	// 		}
+	// 	]
+	// }
+
+}
